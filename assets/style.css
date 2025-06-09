@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #141414;
+  color: #fff;
+}
+
+header {
+  background-color: #141414;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #222;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #e50914;
+}
+
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-section {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  justify-content: center;
+  background-color: #1f1f1f;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.form-section label {
+  margin-right: 0.5rem;
+}
+
+input, select, button {
+  padding: 0.5rem;
+  background-color: #333;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #e50914;
+  cursor: pointer;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.2rem;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.movie-card {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.movie-card img {
+  width: 100%;
+  display: block;
+}
+
+.movie-card h3 {
+  padding: 0.5rem;
+  margin: 0;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #141414;
+  border-top: 1px solid #222;
+  margin-top: 2rem;
+  color: #777;
+}
